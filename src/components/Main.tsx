@@ -4,7 +4,9 @@ type Props = {
 
 const Main = ({ children }: Props) => {
   return (
-    <main className="w-full h-full grid place-items-center">{children}</main>
+    <main className="w-full h-full flex flex-col items-center justify-center">
+      {children}
+    </main>
   );
 };
 
