@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html,
 body,
 #root {
-  @apply w-screen h-screen font-outfit bg-slate-950;
+  @apply w-screen h-screen font-outfit bg-zinc-200 transition-all dark:bg-second;
 }
