@@ -3,11 +3,14 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { ThemeProvider } from "./context/ThemeContext.tsx";
+import { WeatherProvider } from "./context/WeatherContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <ThemeProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ThemeProvider>
+  <React.StrictMode>
+    <WeatherProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </WeatherProvider>
+  </React.StrictMode>
 );
