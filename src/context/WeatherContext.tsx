@@ -68,7 +68,6 @@ export const WeatherProvider = ({ children }: Props) => {
     }
     await handleGetImg(resWeather.name);
     HandleWeatherStateImg(resWeather.WeatherState);
-    console.log(resWeather.WeatherState);
 
     setWeather(resWeather);
     setIsLoading(false);
