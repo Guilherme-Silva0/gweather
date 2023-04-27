@@ -98,6 +98,7 @@ export const WeatherProvider = ({ children }: Props) => {
         setWeatherStateImg("/weather-img/haze.png");
         break;
       default:
+        setWeatherStateImg("/weather-img/cloud.png");
         break;
     }
   };
