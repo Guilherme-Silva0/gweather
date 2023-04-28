@@ -37,8 +37,6 @@ const useApi: UseApi = () => ({
       const randomNumber = await Math.floor(
         Math.random() * (res.data.results.length + 1)
       );
-      console.log(res.data.results.length);
-      console.log(randomNumber);
 
       return {
         alt: res.data.results[randomNumber].alt_description,
