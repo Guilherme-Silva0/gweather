@@ -34,17 +34,15 @@ const useApi: UseApi = () => ({
 
       if (res.data.total === 0) return { erro: true };
 
-      const randomNumber = await Math.floor(Math.random() * 3);
+      const randomNumber = await Math.floor(
+        Math.random() * (res.data.results.length + 1)
+      );
+      console.log(res.data.results.length);
+      console.log(randomNumber);
 
-      if (res.data.results.length >= 3) {
-        return {
-          alt: res.data.results[randomNumber].alt_description,
-          urlImg: res.data.results[randomNumber].urls.small,
-        };
-      }
       return {
-        alt: res.data.results[0].alt_description,
-        urlImg: res.data.results[0].urls.small,
+        alt: res.data.results[randomNumber].alt_description,
+        urlImg: res.data.results[randomNumber].urls.small,
       };
     } catch (_err) {
       return { erro: true };
