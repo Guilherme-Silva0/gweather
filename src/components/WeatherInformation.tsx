@@ -13,7 +13,7 @@ const WeatherInformation = () => {
       <div className="flex items-center gap-2">
         <Text additionalClass="text-2xl">{weather.name}</Text>
         <img
-          src={`https://www.countryflagicons.com/FLAT/32/${weather.country}.png`}
+          src={`https://flagsapi.com/${weather.country}/flat/32.png`}
           alt="flag"
         />
       </div>
