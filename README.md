@@ -9,11 +9,14 @@ This is a React application that allows you to query weather information for a s
 - Axios
 - React Icons
 - TailwindCSS
-- <a href="https://storyset.com/web">Web illustrations by Storyset</a>
+- [Country flags API](https://flagsapi.com/)
+- [Open Weather API](https://openweathermap.org/api)
+- [Unsplash API](https://unsplash.com/developers)
+- [Web illustrations by Storyset](https://storyset.com/web)
 
 ## How to use
 
-To use the application, just access the link https://gweather-eight.vercel.app/
+To use the application, just access the link [https://gweather-eight.vercel.app/](https://gweather-eight.vercel.app/)
 
 ## How to install locally
 
