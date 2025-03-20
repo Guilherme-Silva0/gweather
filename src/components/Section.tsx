@@ -11,7 +11,7 @@ const Section = ({ children }: Props) => {
 
   return (
     <section
-      className="bg-gray-50 rounded-xl shadow-xl bg-no-repeat bg-cover bg-center transition-all max-w-sm max-sm:w-11/12 dark:bg-fist"
+      className="bg-gray-50 rounded-xl shadow-xl bg-no-repeat bg-cover bg-center transition-all z-50 max-w-sm max-sm:w-11/12 dark:bg-fist"
       style={{ backgroundImage: `url(${imgUrl})` }}
     >
       <div
